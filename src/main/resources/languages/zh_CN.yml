@@ -1,0 +1,246 @@
+# 重载插件提醒
+reloadMsg: "&a插件重载完毕..."
+# 没权限时候提醒
+noPermission: "&c你没有权限执行此命令..."
+
+title: "&7McMMO个人信息"
+
+skill:
+  ACROBATICS:
+    name: "&a杂技"
+    material: "GOLDEN_BOOTS"
+    lore:
+      - "获得经验途径: 跳跃"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 19
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '杂技'
+  ALCHEMY:
+    name: "&a炼金术"
+    material: "GOLD_INGOT"
+    lore:
+      - "获得经验途径: 炼药"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 20
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '炼金术'
+  ARCHERY:
+    name: "&a箭术"
+    material: "BOW"
+    lore:
+      - "获得经验途径: 射箭"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 21
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '箭术'
+  AXES:
+    name: "&a斧技"
+    material: "IRON_AXE"
+    lore:
+      - "获得经验途径: 砍树"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 22
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '斧技'
+  EXCAVATION:
+    name: "&a挖掘"
+    material: "DIAMOND_SHOVEL"
+    lore:
+      - "获得经验途径: 挖矿物石头"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 23
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '挖掘'
+  FISHING:
+    name: "&a钓鱼"
+    material: "FISHING_ROD"
+    lore:
+      - "获得经验途径: 钓鱼"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 24
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '钓鱼'
+  HERBALISM:
+    name: "&a草药学"
+    material: "GRASS"
+    lore:
+      - "获得经验途径: 破坏植物"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 25
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '草药学'
+  REPAIR:
+    name: "&a修理"
+    material: "ANVIL"
+    lore:
+      - "获得经验途径: 修理装备"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 29
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '修理'
+  SALVAGE:
+    name: "&a分解"
+    material: "GOLD_BLOCK"
+    lore:
+      - "获得经验途径: 从钓鱼/修理"
+      - "&b--> &a您的等级: ${xp}"
+      - "钓鱼/修理"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 30
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '分解'
+  SMELTING:
+    name: "&a冶炼"
+    material: "FURNACE"
+    lore:
+      - "获得经验途径: 从挖矿/修理"
+      - "&b--> &a您的等级: ${xp}"
+      - "挖矿/修理"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 31
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '冶炼'
+  SWORDS:
+    name: "&a剑术"
+    material: "DIAMOND_SWORD"
+    lore:
+      - "获得经验途径: 打人"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 32
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '剑术'
+  TAMING:
+    name: "&a驯服"
+    material: "DIAMOND"
+    lore:
+      - "获得经验途径: 驯服动物"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 33
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '驯服'
+  UNARMED:
+    name: "&a格斗"
+    material: "BONE_BLOCK"
+    lore:
+      - "获得经验途径: 空手打人"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 39
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '格斗'
+  WOODCUTTING:
+    name: "&a伐木"
+    material: "DIAMOND_AXE"
+    lore:
+      - "获得经验途径: 砍树"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 41
+    isEnchant: false
+    custom-model-data: 0
+    commands:
+      - '伐木'
+  # 分隔板 index你可以多写坐标
+  pane:
+    enable: true
+    index: 0,1,2,3,4,5,6,7,8,45,46,47,48,50,51,52,53,9,18,27,36,17,26,35,44
+    material: BLACK_STAINED_GLASS_PANE
+    isEnchant: false
+    name: "       &8[&7分割板&8]"
+    lore:
+      - "&7哎呀,不要随便戳人家啦"
+    custom-model-data: 0
+  # 返回按钮
+  back:
+    enable: true
+    index: 49
+    material: barrier
+    isEnchant: false
+    name: "   &8[&a返回&8]"
+    lore:
+      - '&f- &7点击返回'
+    custom-model-data: 0
+    command: "plm open menu"
+  me:
+    enable: true
+    index: 13
+    material: "NETHER_STAR"
+    isEnchant: false
+    name: "&a总战斗力"
+    custom-model-data: 0
+    lore:
+      - "&a当前总战斗力: ${all}"
