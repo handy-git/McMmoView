@@ -7,7 +7,7 @@
     <groupId>com.handy.mcmmo</groupId>
     <name>mcMmoView</name>
     <artifactId>mcMmoView</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>mcMMO可视化gui</description>
 
     <properties>
