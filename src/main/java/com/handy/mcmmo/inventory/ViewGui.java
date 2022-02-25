@@ -4,6 +4,7 @@ import com.gmail.nossr50.api.ExperienceAPI;
 import com.handy.lib.core.StrUtil;
 import com.handy.lib.inventory.HandyInventory;
 import com.handy.lib.inventory.HandyInventoryUtil;
+import com.handy.lib.util.BaseUtil;
 import com.handy.lib.util.ItemStackUtil;
 import com.handy.mcmmo.constants.GuiTypeEnum;
 import com.handy.mcmmo.util.ConfigUtil;
@@ -39,7 +40,7 @@ public class ViewGui {
      * @return gui
      */
     public Inventory createGui(Player player) {
-        HandyInventory handyInventory = new HandyInventory(GuiTypeEnum.MC_MMO_VIEW.getType(), GuiTypeEnum.MC_MMO_VIEW.getTitle());
+        HandyInventory handyInventory = new HandyInventory(GuiTypeEnum.MC_MMO_VIEW.getType(), BaseUtil.getLangMsg("title"));
         // 设置数据
         handyInventory.setPlayer(player);
         this.setInventoryDate(handyInventory);

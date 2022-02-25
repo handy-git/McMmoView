@@ -1,8 +1,9 @@
 name: McMmoView
 main: com.handy.mcmmo.McMmoView
-version: 1.0.1
+version: 1.0.2
 author: handy
-api-version: "1.13"
+website: https://github.com/handy-git/McMmoView/releases
+api-version: 1.13
 depend: [ mcMMO ]
 description: mcMMO可视化gui
 commands:

@@ -29,7 +29,7 @@ public class PlayerJoinEventListener implements Listener {
         if (!ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE_TO_OP_MSG)) {
             return;
         }
-        HandyHttpUtil.checkVersion(event.getPlayer(), McMmoViewConstants.PLUGIN_VERSION_URL, null);
+        HandyHttpUtil.checkVersion(event.getPlayer(), McMmoViewConstants.PLUGIN_VERSION_URL);
     }
 
 }

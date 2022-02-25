@@ -7,7 +7,7 @@
     <groupId>com.handy.mcmmo</groupId>
     <name>mcMmoView</name>
     <artifactId>mcMmoView</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description>mcMMO可视化gui</description>
 
     <properties>
@@ -15,7 +15,7 @@
         <spigot-api.vesion>1.18.1-R0.1-SNAPSHOT</spigot-api.vesion>
         <placeholderapi.version>2.10.5</placeholderapi.version>
         <lombok.version>1.18.22</lombok.version>
-        <HandyLib.version>2.6.6</HandyLib.version>
+        <HandyLib.version>2.8.1</HandyLib.version>
         <mcMMO.version>2.1.209</mcMMO.version>
     </properties>
 
