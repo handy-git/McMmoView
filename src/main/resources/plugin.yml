@@ -2,7 +2,7 @@ name: McMmoView
 main: com.handy.mcmmo.McMmoView
 version: 1.0.2
 author: handy
-website: https://github.com/handy-git/McMmoView/releases
+website: https://www.mcbbs.net/thread-1300127-1-1.html
 api-version: 1.13
 depend: [ mcMMO ]
 description: mcMMO可视化gui
