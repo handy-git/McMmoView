@@ -1,9 +1,10 @@
-package com.handy.mcmmo.command.admin;
+package cn.handyplus.mcmmo.command.admin;
 
-import com.handy.lib.command.IHandyCommandEvent;
-import com.handy.lib.util.BaseUtil;
-import com.handy.mcmmo.McMmoView;
-import com.handy.mcmmo.util.ConfigUtil;
+import cn.handyplus.lib.api.MessageApi;
+import cn.handyplus.lib.command.IHandyCommandEvent;
+import cn.handyplus.lib.util.BaseUtil;
+import cn.handyplus.mcmmo.McMmoView;
+import cn.handyplus.mcmmo.util.ConfigUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -31,7 +32,7 @@ public class ReloadCommand implements IHandyCommandEvent {
             @Override
             public void run() {
                 ConfigUtil.init();
-                sender.sendMessage(BaseUtil.getLangMsg("reloadMsg"));
+                MessageApi.sendMessage(sender, BaseUtil.getLangMsg("reloadMsg"));
             }
         }.runTaskAsynchronously(McMmoView.getInstance());
     }

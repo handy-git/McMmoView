@@ -1,13 +1,14 @@
-package com.handy.mcmmo.inventory;
+package cn.handyplus.mcmmo.inventory;
 
+import cn.handyplus.lib.constants.BaseConstants;
+import cn.handyplus.lib.core.StrUtil;
+import cn.handyplus.lib.inventory.HandyInventory;
+import cn.handyplus.lib.inventory.HandyInventoryUtil;
+import cn.handyplus.lib.util.BaseUtil;
+import cn.handyplus.lib.util.ItemStackUtil;
+import cn.handyplus.mcmmo.constants.GuiTypeEnum;
+import cn.handyplus.mcmmo.util.ConfigUtil;
 import com.gmail.nossr50.api.ExperienceAPI;
-import com.handy.lib.core.StrUtil;
-import com.handy.lib.inventory.HandyInventory;
-import com.handy.lib.inventory.HandyInventoryUtil;
-import com.handy.lib.util.BaseUtil;
-import com.handy.lib.util.ItemStackUtil;
-import com.handy.mcmmo.constants.GuiTypeEnum;
-import com.handy.mcmmo.util.ConfigUtil;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.MemorySection;
 import org.bukkit.entity.Player;
@@ -23,13 +24,13 @@ import java.util.Map;
  *
  * @author handy
  */
-public class ViewGui {
-    private ViewGui() {
+public class OpenGui {
+    private OpenGui() {
     }
 
-    private final static ViewGui INSTANCE = new ViewGui();
+    private final static OpenGui INSTANCE = new OpenGui();
 
-    public static ViewGui getInstance() {
+    public static OpenGui getInstance() {
         return INSTANCE;
     }
 
@@ -40,7 +41,8 @@ public class ViewGui {
      * @return gui
      */
     public Inventory createGui(Player player) {
-        HandyInventory handyInventory = new HandyInventory(GuiTypeEnum.MC_MMO_VIEW.getType(), BaseUtil.getLangMsg("title"));
+        int openSize = ConfigUtil.CONFIG.getInt("openSize", BaseConstants.GUI_SIZE_54);
+        HandyInventory handyInventory = new HandyInventory(GuiTypeEnum.MC_MMO_VIEW.getType(), BaseUtil.getLangMsg("title"), openSize);
         // 设置数据
         handyInventory.setPlayer(player);
         this.setInventoryDate(handyInventory);
@@ -93,7 +95,7 @@ public class ViewGui {
             boolean hideFlag = memorySection.getBoolean("hideFlag", true);
             boolean hideEnchant = memorySection.getBoolean("hideEnchant", true);
             for (Integer index : indexList) {
-                ItemStack itemStack = ItemStackUtil.getItemStack(ItemStackUtil.getMaterial(material), name, loreList, enchant, customModelDataId, hideFlag, this.replaceMap(handyInventory.getPlayer(), key), hideEnchant);
+                ItemStack itemStack = ItemStackUtil.getItemStack(material, name, loreList, enchant, customModelDataId, hideFlag, this.replaceMap(handyInventory.getPlayer(), key), hideEnchant);
                 inventory.setItem(index, itemStack);
                 if ("pane".equalsIgnoreCase(key) || "me".equalsIgnoreCase(key)) {
                     continue;

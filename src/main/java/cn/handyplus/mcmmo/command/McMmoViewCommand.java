@@ -1,10 +1,10 @@
-package com.handy.mcmmo.command;
+package cn.handyplus.mcmmo.command;
 
-import com.handy.lib.annotation.HandyCommand;
-import com.handy.lib.command.HandyCommandFactory;
-import com.handy.lib.util.BaseUtil;
-import com.handy.mcmmo.constants.TabListEnum;
-import com.handy.mcmmo.util.ConfigUtil;
+import cn.handyplus.lib.annotation.HandyCommand;
+import cn.handyplus.lib.command.HandyCommandFactory;
+import cn.handyplus.lib.util.BaseUtil;
+import cn.handyplus.mcmmo.constants.TabListEnum;
+import cn.handyplus.mcmmo.util.ConfigUtil;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabExecutor;

@@ -1,8 +1,8 @@
-package com.handy.mcmmo.listener.gui;
+package cn.handyplus.mcmmo.listener.gui;
 
-import com.handy.lib.inventory.HandyInventory;
-import com.handy.lib.inventory.IHandyClickEvent;
-import com.handy.mcmmo.constants.GuiTypeEnum;
+import cn.handyplus.lib.inventory.HandyInventory;
+import cn.handyplus.lib.inventory.IHandyClickEvent;
+import cn.handyplus.mcmmo.constants.GuiTypeEnum;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryClickEvent;
 
@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * @author handy
  */
-public class McMmoViewClickEvent implements IHandyClickEvent {
+public class OpenClickEvent implements IHandyClickEvent {
     @Override
     public String guiType() {
         return GuiTypeEnum.MC_MMO_VIEW.getType();

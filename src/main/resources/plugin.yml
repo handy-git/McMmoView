@@ -1,6 +1,6 @@
 name: McMmoView
-main: com.handy.mcmmo.McMmoView
-version: 1.0.2
+main: cn.handyplus.mcmmo.McMmoView
+version: 1.0.3
 author: handy
 website: https://www.mcbbs.net/thread-1300127-1-1.html
 api-version: 1.13
@@ -8,17 +8,17 @@ depend: [ mcMMO ]
 description: mcMMO可视化gui
 commands:
   mcmmoview:
-    description: §amcMMO可视化gui
+    description: mcMMO可视化gui
     aliases: [ mmv ]
 permissions:
   mcmmoview.*:
-    description: §amcMMO可视化gui
+    description: mcMMO可视化gui
     children:
       mcmmoview.reload: true
       mcmmoview.open: true
   mcmmoview.reload:
-    description: §a重新加载配置
+    description: 重新加载配置
     default: op
   mcmmoview.open:
-    description: §a打开
+    description: 打开GUI
     default: true

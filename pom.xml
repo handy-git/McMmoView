@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.handy.mcmmo</groupId>
+    <groupId>cn.handyplus.mcmmo</groupId>
     <name>mcMmoView</name>
     <artifactId>mcMmoView</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <description>mcMMO可视化gui</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spigot-api.vesion>1.18.1-R0.1-SNAPSHOT</spigot-api.vesion>
         <placeholderapi.version>2.10.5</placeholderapi.version>
-        <lombok.version>1.18.22</lombok.version>
-        <HandyLib.version>2.8.1</HandyLib.version>
+        <lombok.version>1.18.26</lombok.version>
         <mcMMO.version>2.1.209</mcMMO.version>
+        <HandyLib.version>3.5.3</HandyLib.version>
     </properties>
 
     <dependencies>
@@ -45,7 +45,7 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.handy.lib</groupId>
+            <groupId>cn.handyplus.lib</groupId>
             <artifactId>HandyLib</artifactId>
             <version>${HandyLib.version}</version>
         </dependency>
@@ -72,13 +72,13 @@
                     <createDependencyReducedPom>false</createDependencyReducedPom>
                     <artifactSet>
                         <includes>
-                            <include>com.handy.lib:*:*:*</include>
+                            <include>cn.handyplus.lib:*:*:*</include>
                         </includes>
                     </artifactSet>
                     <relocations>
                         <relocation>
-                            <pattern>com.handy.lib</pattern>
-                            <shadedPattern>com.handy.mcmmo.lib</shadedPattern>
+                            <pattern>cn.handyplus.lib</pattern>
+                            <shadedPattern>cn.handyplus.mcmmo.lib</shadedPattern>
                         </relocation>
                     </relocations>
                 </configuration>

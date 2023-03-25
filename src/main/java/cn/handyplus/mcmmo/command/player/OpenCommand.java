@@ -1,10 +1,10 @@
-package com.handy.mcmmo.command.player;
+package cn.handyplus.mcmmo.command.player;
 
-import com.handy.lib.command.IHandyCommandEvent;
-import com.handy.lib.util.AssertUtil;
-import com.handy.lib.util.BaseUtil;
-import com.handy.mcmmo.McMmoView;
-import com.handy.mcmmo.inventory.ViewGui;
+import cn.handyplus.lib.command.IHandyCommandEvent;
+import cn.handyplus.lib.util.AssertUtil;
+import cn.handyplus.lib.util.BaseUtil;
+import cn.handyplus.mcmmo.McMmoView;
+import cn.handyplus.mcmmo.inventory.OpenGui;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -32,12 +32,11 @@ public class OpenCommand implements IHandyCommandEvent {
     @Override
     public void onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         // 是否为玩家
-        AssertUtil.notPlayer(sender, BaseUtil.getLangMsg("noPlayerFailureMsg"));
-        Player player = (Player) sender;
+        Player player = AssertUtil.notPlayer(sender, BaseUtil.getLangMsg("noPlayerFailureMsg"));
         new BukkitRunnable() {
             @Override
             public void run() {
-                Inventory inventory = ViewGui.getInstance().createGui(player);
+                Inventory inventory = OpenGui.getInstance().createGui(player);
                 Bukkit.getScheduler().runTask(McMmoView.getInstance(), () -> player.openInventory(inventory));
             }
         }.runTaskAsynchronously(McMmoView.getInstance());

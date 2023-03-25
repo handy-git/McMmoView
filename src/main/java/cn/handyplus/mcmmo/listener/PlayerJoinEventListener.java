@@ -1,10 +1,10 @@
-package com.handy.mcmmo.listener;
+package cn.handyplus.mcmmo.listener;
 
-import com.handy.lib.annotation.HandyListener;
-import com.handy.lib.constants.BaseConstants;
-import com.handy.lib.util.HandyHttpUtil;
-import com.handy.mcmmo.constants.McMmoViewConstants;
-import com.handy.mcmmo.util.ConfigUtil;
+import cn.handyplus.lib.annotation.HandyListener;
+import cn.handyplus.lib.constants.BaseConstants;
+import cn.handyplus.lib.util.HandyHttpUtil;
+import cn.handyplus.mcmmo.util.ConfigUtil;
+import cn.handyplus.mcmmo.constants.McMmoViewConstants;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

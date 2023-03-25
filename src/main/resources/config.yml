@@ -6,3 +6,6 @@ isCheckUpdate: true
 
 # op登录时候是否发送更新提醒
 isCheckUpdateToOpMsg: true
+
+# open打开的Gui大小 一行9列,一共6行 如果修改了这个语言文件夹中对应的index必须修改正确!不然会报错
+openSize: 54

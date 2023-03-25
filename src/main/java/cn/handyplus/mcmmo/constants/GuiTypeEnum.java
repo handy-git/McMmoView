@@ -1,4 +1,4 @@
-package com.handy.mcmmo.constants;
+package cn.handyplus.mcmmo.constants;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

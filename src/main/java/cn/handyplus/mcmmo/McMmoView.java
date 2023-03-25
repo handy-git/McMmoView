@@ -1,13 +1,16 @@
-package com.handy.mcmmo;
+package cn.handyplus.mcmmo;
 
-import com.handy.lib.InitApi;
-import com.handy.lib.api.MessageApi;
-import com.handy.lib.constants.BaseConstants;
-import com.handy.mcmmo.constants.McMmoViewConstants;
-import com.handy.mcmmo.util.ConfigUtil;
+import cn.handyplus.lib.InitApi;
+import cn.handyplus.lib.api.MessageApi;
+import cn.handyplus.lib.constants.BaseConstants;
+import cn.handyplus.lib.inventory.HandyInventory;
+import cn.handyplus.mcmmo.constants.McMmoViewConstants;
+import cn.handyplus.mcmmo.util.ConfigUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.InventoryHolder;
+import org.bukkit.inventory.InventoryView;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -23,14 +26,13 @@ public class McMmoView extends JavaPlugin {
         INSTANCE = this;
         InitApi initApi = InitApi.getInstance(this);
         // 加载配置文件
-        ConfigUtil.enableConfig();
-        initApi.initCommand("com.handy.mcmmo.command")
-                .initSubCommand("com.handy.mcmmo.command")
-                .initListener("com.handy.mcmmo.listener")
-                .initClickEvent("com.handy.mcmmo.listener.gui")
+        ConfigUtil.init();
+        initApi.initCommand("cn.handyplus.mcmmo.command")
+                .initListener("cn.handyplus.mcmmo.listener")
+                .initClickEvent("cn.handyplus.mcmmo.listener.gui")
                 .addMetrics(14150)
                 .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE), McMmoViewConstants.PLUGIN_VERSION_URL);
-        ;
+
         MessageApi.sendConsoleMessage(ChatColor.GREEN + "已成功载入服务器！");
         MessageApi.sendConsoleMessage(ChatColor.GREEN + "Author:handy QQ群:1064982471");
     }
@@ -38,7 +40,11 @@ public class McMmoView extends JavaPlugin {
     @Override
     public void onDisable() {
         for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-            onlinePlayer.closeInventory();
+            InventoryView openInventory = onlinePlayer.getOpenInventory();
+            InventoryHolder holder = openInventory.getTopInventory().getHolder();
+            if (holder instanceof HandyInventory) {
+                onlinePlayer.closeInventory();
+            }
         }
         MessageApi.sendConsoleMessage("§a已成功卸载！");
         MessageApi.sendConsoleMessage("§aAuthor:handy QQ群:1064982471");
