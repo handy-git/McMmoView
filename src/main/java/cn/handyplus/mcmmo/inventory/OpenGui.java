@@ -7,6 +7,7 @@ import cn.handyplus.lib.inventory.HandyInventoryUtil;
 import cn.handyplus.lib.util.BaseUtil;
 import cn.handyplus.lib.util.ItemStackUtil;
 import cn.handyplus.mcmmo.constants.GuiTypeEnum;
+import cn.handyplus.mcmmo.hook.PlaceholderApiUtil;
 import cn.handyplus.mcmmo.util.ConfigUtil;
 import com.gmail.nossr50.api.ExperienceAPI;
 import org.bukkit.configuration.ConfigurationSection;
@@ -71,6 +72,7 @@ public class OpenGui {
     private void setFunctionMenu(HandyInventory handyInventory) {
         Inventory inventory = handyInventory.getInventory();
         Map<Integer, Object> objMap = handyInventory.getObjMap();
+        Player player = handyInventory.getPlayer();
         // 获取菜单
         ConfigurationSection configurationSection = ConfigUtil.LANG_CONFIG.getConfigurationSection("skill");
         if (configurationSection == null) {
@@ -95,6 +97,8 @@ public class OpenGui {
             boolean hideFlag = memorySection.getBoolean("hideFlag", true);
             boolean hideEnchant = memorySection.getBoolean("hideEnchant", true);
             for (Integer index : indexList) {
+                name = PlaceholderApiUtil.set(player, name);
+                loreList = PlaceholderApiUtil.set(player, loreList);
                 ItemStack itemStack = ItemStackUtil.getItemStack(material, name, loreList, enchant, customModelDataId, hideFlag, this.replaceMap(handyInventory.getPlayer(), key), hideEnchant);
                 inventory.setItem(index, itemStack);
                 if ("pane".equalsIgnoreCase(key) || "me".equalsIgnoreCase(key)) {

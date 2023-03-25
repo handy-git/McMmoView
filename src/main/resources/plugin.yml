@@ -5,6 +5,7 @@ author: handy
 website: https://www.mcbbs.net/thread-1300127-1-1.html
 api-version: 1.13
 depend: [ mcMMO ]
+softdepend: [ PlaceholderAPI ]
 description: mcMMO可视化gui
 commands:
   mcmmoview:

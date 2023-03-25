@@ -3,6 +3,10 @@ reloadMsg: "&a插件重载完毕..."
 # 没权限时候提醒
 noPermission: "&c你没有权限执行此命令..."
 
+# placeholderAPI提醒
+placeholderAPISucceedMsg: "&a成功加载placeholderApi,启用自定义变量功能!"
+placeholderAPIFailureMsg: "&4未找到placeholderApi,未启用自定义变量功能!"
+
 title: "&7McMMO个人信息"
 
 skill:

@@ -4,6 +4,7 @@ import cn.handyplus.lib.InitApi;
 import cn.handyplus.lib.api.MessageApi;
 import cn.handyplus.lib.constants.BaseConstants;
 import cn.handyplus.lib.inventory.HandyInventory;
+import cn.handyplus.lib.util.BaseUtil;
 import cn.handyplus.mcmmo.constants.McMmoViewConstants;
 import cn.handyplus.mcmmo.util.ConfigUtil;
 import org.bukkit.Bukkit;
@@ -20,11 +21,14 @@ import org.bukkit.plugin.java.JavaPlugin;
  */
 public class McMmoView extends JavaPlugin {
     private static McMmoView INSTANCE;
+    public static boolean USE_PAPI;
 
     @Override
     public void onEnable() {
         INSTANCE = this;
         InitApi initApi = InitApi.getInstance(this);
+        // 加载Placeholder
+        this.loadPlaceholder();
         // 加载配置文件
         ConfigUtil.init();
         initApi.initCommand("cn.handyplus.mcmmo.command")
@@ -53,5 +57,19 @@ public class McMmoView extends JavaPlugin {
     public static McMmoView getInstance() {
         return INSTANCE;
     }
+
+    /**
+     * 加载Placeholder
+     */
+    public void loadPlaceholder() {
+        if (Bukkit.getPluginManager().getPlugin(BaseConstants.PLACEHOLDER_API) != null) {
+            USE_PAPI = true;
+            MessageApi.sendConsoleMessage(BaseUtil.getLangMsg("placeholderAPISucceedMsg"));
+            return;
+        }
+        USE_PAPI = false;
+        MessageApi.sendConsoleMessage(BaseUtil.getLangMsg("placeholderAPIFailureMsg"));
+    }
+
 
 }

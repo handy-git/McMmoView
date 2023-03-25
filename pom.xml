@@ -17,6 +17,7 @@
         <lombok.version>1.18.26</lombok.version>
         <mcMMO.version>2.1.209</mcMMO.version>
         <HandyLib.version>3.5.3</HandyLib.version>
+        <placeholderapi.version>2.10.5</placeholderapi.version>
     </properties>
 
     <dependencies>
@@ -24,6 +25,12 @@
             <groupId>com.gmail.nossr50</groupId>
             <artifactId>mcMMO</artifactId>
             <version>${mcMMO.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>me.clip</groupId>
+            <artifactId>placeholderapi</artifactId>
+            <version>${placeholderapi.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
