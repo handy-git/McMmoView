@@ -27,10 +27,10 @@ public class McMmoView extends JavaPlugin {
     public void onEnable() {
         INSTANCE = this;
         InitApi initApi = InitApi.getInstance(this);
-        // 加载Placeholder
-        this.loadPlaceholder();
         // 加载配置文件
         ConfigUtil.init();
+        // 加载Placeholder
+        this.loadPlaceholder();
         initApi.initCommand("cn.handyplus.mcmmo.command")
                 .initListener("cn.handyplus.mcmmo.listener")
                 .initClickEvent("cn.handyplus.mcmmo.listener.gui")
