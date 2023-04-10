@@ -1,0 +1,25 @@
+name: McMmoView
+main: cn.handyplus.mcmmo.McMmoView
+version: 1.0.4
+author: handy
+website: https://ricedoc.handyplus.cn/wiki/MCMMOView/
+api-version: 1.13
+depend: [ mcMMO ]
+softdepend: [ PlaceholderAPI ]
+description: mcMMO可视化gui
+commands:
+  mcmmoview:
+    description: mcMMO可视化gui
+    aliases: [ mmv ]
+permissions:
+  mcmmoview.*:
+    description: mcMMO可视化gui
+    children:
+      mcmmoview.reload: true
+      mcmmoview.open: true
+  mcmmoview.reload:
+    description: 重新加载配置
+    default: op
+  mcmmoview.open:
+    description: 打开GUI
+    default: true
