@@ -1,5 +1,6 @@
 package cn.handyplus.mcmmo.listener.gui;
 
+import cn.handyplus.lib.core.StrUtil;
 import cn.handyplus.lib.inventory.HandyInventory;
 import cn.handyplus.lib.inventory.IHandyClickEvent;
 import cn.handyplus.mcmmo.constants.GuiTypeEnum;
@@ -27,7 +28,11 @@ public class OpenClickEvent implements IHandyClickEvent {
             return;
         }
         String command = (String) obj;
+        if (StrUtil.isEmpty(command)) {
+            return;
+        }
         player.closeInventory();
+        command = command.replace("${player}", player.getName());
         player.performCommand(command);
     }
 

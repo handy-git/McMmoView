@@ -223,6 +223,7 @@ skill:
     lore:
       - '&f- &7点击返回'
     custom-model-data: 0
+    # 点击执行的指令 ${player} 表示玩家名称
     command: "plm open menu"
   me:
     enable: true
