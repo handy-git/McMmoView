@@ -7,3 +7,8 @@ MCBBS: [点击查看](https://www.mcbbs.net/thread-1300127-1-1.html)
 
 本插件代码全部原创,基于HandyLib开发
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=handy-git/McMmoView&type=Date)](https://star-history.com/#handy-git/McMmoView&Date)
+
+
