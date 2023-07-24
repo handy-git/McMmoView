@@ -1,0 +1,238 @@
+# Plugin reload message
+reloadMsg: "&aPlugin reloaded successfully..."
+# No permission message
+noPermission: "&cYou do not have permission to execute this command..."
+
+# PlaceholderAPI messages
+placeholderAPISucceedMsg: "&aSuccessfully loaded PlaceholderAPI. Custom variables enabled!"
+placeholderAPIFailureMsg: "&4PlaceholderAPI not found. Custom variables disabled!"
+
+title: "&7McMMO Player Information"
+
+skill:
+  ACROBATICS:
+    name: "&aAcrobatics"
+    material: "GOLDEN_BOOTS"
+    lore:
+      - "Gain experience from: Falling"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 19
+    isEnchant: false
+    custom-model-data: 0
+  ALCHEMY:
+    name: "&aAlchemy"
+    material: "GOLD_INGOT"
+    lore:
+      - "Gain experience from: Brewing potions"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 20
+    isEnchant: false
+    custom-model-data: 0
+  ARCHERY:
+    name: "&aArchery"
+    material: "BOW"
+    lore:
+      - "Gain experience from: Shooting arrows"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 21
+    isEnchant: false
+    custom-model-data: 0
+  AXES:
+    name: "&aAxes"
+    material: "IRON_AXE"
+    lore:
+      - "Gain experience from: Using axes"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 22
+    isEnchant: false
+    custom-model-data: 0
+  EXCAVATION:
+    name: "&aExcavation"
+    material: "DIAMOND_SHOVEL"
+    lore:
+      - "Gain experience from: Digging blocks"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 23
+    isEnchant: false
+    custom-model-data: 0
+  FISHING:
+    name: "&aFishing"
+    material: "FISHING_ROD"
+    lore:
+      - "Gain experience from: Fishing"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 24
+    isEnchant: false
+    custom-model-data: 0
+  HERBALISM:
+    name: "&aHerbalism"
+    material: "GRASS"
+    lore:
+      - "Gain experience from: Harvesting crops"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 25
+    isEnchant: false
+    custom-model-data: 0
+  REPAIR:
+    name: "&aRepair"
+    material: "ANVIL"
+    lore:
+      - "Gain experience from: Repairing equipment"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 29
+    isEnchant: false
+    custom-model-data: 0
+  SALVAGE:
+    name: "&aSalvage"
+    material: "GOLD_BLOCK"
+    lore:
+      - "Gain experience from: Fishing/Repairing"
+      - "&b--> &aYour Level: ${xp}"
+      - "Fishing/Repairing"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 30
+    isEnchant: false
+    custom-model-data: 0
+  SMELTING:
+    name: "&aSmelting"
+    material: "FURNACE"
+    lore:
+      - "Gain experience from: Mining/Repairing"
+      - "&b--> &aYour Level: ${xp}"
+      - "Mining/Repairing"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 31
+    isEnchant: false
+    custom-model-data: 0
+  SWORDS:
+    name: "&aSwords"
+    material: "DIAMOND_SWORD"
+    lore:
+      - "Gain experience from: Using swords"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 32
+    isEnchant: false
+    custom-model-data: 0
+  TAMING:
+    name: "&aTaming"
+    material: "DIAMOND"
+    lore:
+      - "Gain experience from: Taming animals"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 33
+    isEnchant: false
+    custom-model-data: 0
+  UNARMED:
+    name: "&aUnarmed"
+    material: "BONE_BLOCK"
+    lore:
+      - "Gain experience from: Unarmed combat"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 39
+    isEnchant: false
+    custom-model-data: 0
+  MINING:
+    name: "&aMining"
+    material: "IRON_PICKAXE"
+    lore:
+      - "Gain experience from: Mining stone and ores"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 40
+    isEnchant: false
+    custom-model-data: 0
+  WOODCUTTING:
+    name: "&aWoodcutting"
+    material: "DIAMOND_AXE"
+    lore:
+      - "Gain experience from: Chopping down trees"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 41
+    isEnchant: false
+    custom-model-data: 0
+  # Separator panel, you can add more indices
+  pane:
+    enable: true
+    index: 0,1,2,3,4,5,6,7,8,45,46,47,48,50,51,52,53,9,18,27,36,17,26,35,44
+    material: BLACK_STAINED_GLASS_PANE
+    isEnchant: false
+    name: "&8[&7PlaceHolder&8]"
+    lore:
+      - "&7Oops, don't click me!"
+    custom-model-data: 0
+  # Back button
+  back:
+    enable: true
+    index: 49
+    material: barrier
+    isEnchant: false
+    name: "&8[&aBack&8]"
+    lore:
+      - '&f- &7Click to go back'
+    custom-model-data: 0
+    # Command to execute when clicked, ${player} represents the player's name
+    command: "commandpanel Main_Menu ${player}"
+  me:
+    enable: true
+    index: 13
+    material: "NETHER_STAR"
+    isEnchant: false
+    name: "&aTotal Power"
+    custom-model-data: 0
+    lore:
+      - "&aCurrent Total Power: ${all}"
+
+     
