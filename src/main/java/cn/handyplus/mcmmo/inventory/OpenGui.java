@@ -43,7 +43,7 @@ public class OpenGui {
      */
     public Inventory createGui(Player player) {
         int openSize = ConfigUtil.CONFIG.getInt("openSize", BaseConstants.GUI_SIZE_54);
-        HandyInventory handyInventory = new HandyInventory(GuiTypeEnum.MC_MMO_VIEW.getType(), BaseUtil.getLangMsg("title"), openSize);
+        HandyInventory handyInventory = new HandyInventory(GuiTypeEnum.MC_MMO_VIEW.getType(), BaseUtil.getMsgNotColor("title"), openSize);
         // 设置数据
         handyInventory.setPlayer(player);
         this.setInventoryDate(handyInventory);

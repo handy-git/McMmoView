@@ -1,6 +1,7 @@
 package cn.handyplus.mcmmo.listener.gui;
 
 import cn.handyplus.lib.core.StrUtil;
+import cn.handyplus.lib.expand.adapter.HandySchedulerUtil;
 import cn.handyplus.lib.inventory.HandyInventory;
 import cn.handyplus.lib.inventory.IHandyClickEvent;
 import cn.handyplus.mcmmo.constants.GuiTypeEnum;
@@ -13,9 +14,15 @@ import java.util.Map;
  * @author handy
  */
 public class OpenClickEvent implements IHandyClickEvent {
+
     @Override
     public String guiType() {
         return GuiTypeEnum.MC_MMO_VIEW.getType();
+    }
+
+    @Override
+    public boolean isAsync() {
+        return true;
     }
 
     @Override
@@ -31,9 +38,9 @@ public class OpenClickEvent implements IHandyClickEvent {
         if (StrUtil.isEmpty(command)) {
             return;
         }
-        player.closeInventory();
+        handyInventory.syncClose();
         command = command.replace("${player}", player.getName());
-        player.performCommand(command);
+        HandySchedulerUtil.performCommand(player, command);
     }
 
 }

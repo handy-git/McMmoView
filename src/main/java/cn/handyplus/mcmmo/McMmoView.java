@@ -1,10 +1,11 @@
 package cn.handyplus.mcmmo;
 
 import cn.handyplus.lib.InitApi;
-import cn.handyplus.lib.api.MessageApi;
 import cn.handyplus.lib.constants.BaseConstants;
+import cn.handyplus.lib.expand.adapter.HandySchedulerUtil;
 import cn.handyplus.lib.inventory.HandyInventory;
 import cn.handyplus.lib.util.BaseUtil;
+import cn.handyplus.lib.util.MessageUtil;
 import cn.handyplus.mcmmo.constants.McMmoViewConstants;
 import cn.handyplus.mcmmo.util.ConfigUtil;
 import org.bukkit.Bukkit;
@@ -20,7 +21,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  * @author handy
  */
 public class McMmoView extends JavaPlugin {
-    private static McMmoView INSTANCE;
+    public static McMmoView INSTANCE;
     public static boolean USE_PAPI;
 
     @Override
@@ -37,8 +38,8 @@ public class McMmoView extends JavaPlugin {
                 .addMetrics(14150)
                 .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE), McMmoViewConstants.PLUGIN_VERSION_URL);
 
-        MessageApi.sendConsoleMessage(ChatColor.GREEN + "已成功载入服务器！");
-        MessageApi.sendConsoleMessage(ChatColor.GREEN + "Author:handy QQ群:1064982471");
+        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "已成功载入服务器！");
+        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "Author:handy MCBBS:https://www.mcbbs.net/thread-1300127-1-1.html");
     }
 
     @Override
@@ -50,12 +51,8 @@ public class McMmoView extends JavaPlugin {
                 onlinePlayer.closeInventory();
             }
         }
-        MessageApi.sendConsoleMessage("§a已成功卸载！");
-        MessageApi.sendConsoleMessage("§aAuthor:handy QQ群:1064982471");
-    }
-
-    public static McMmoView getInstance() {
-        return INSTANCE;
+        HandySchedulerUtil.cancelTask();
+        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "已成功卸载！");
     }
 
     /**
@@ -64,11 +61,11 @@ public class McMmoView extends JavaPlugin {
     public void loadPlaceholder() {
         if (Bukkit.getPluginManager().getPlugin(BaseConstants.PLACEHOLDER_API) != null) {
             USE_PAPI = true;
-            MessageApi.sendConsoleMessage(BaseUtil.getLangMsg("placeholderAPISucceedMsg"));
+            MessageUtil.sendConsoleMessage(BaseUtil.getMsgNotColor("placeholderAPISucceedMsg"));
             return;
         }
         USE_PAPI = false;
-        MessageApi.sendConsoleMessage(BaseUtil.getLangMsg("placeholderAPIFailureMsg"));
+        MessageUtil.sendConsoleMessage(BaseUtil.getMsgNotColor("placeholderAPIFailureMsg"));
     }
 
 

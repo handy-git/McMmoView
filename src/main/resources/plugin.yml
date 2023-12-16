@@ -1,12 +1,13 @@
 name: McMmoView
 main: cn.handyplus.mcmmo.McMmoView
-version: 1.0.5
+version: 1.0.6
 author: handy
 website: https://ricedoc.handyplus.cn/wiki/MCMMOView/
 api-version: 1.13
 depend: [ mcMMO ]
 softdepend: [ PlaceholderAPI ]
 description: mcMMO可视化gui
+folia-supported: true
 commands:
   mcmmoview:
     description: mcMMO可视化gui
