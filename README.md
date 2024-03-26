@@ -3,7 +3,7 @@
 
 如果该插件帮助到了你，请点个star就是最大的支持了
 
-MCBBS: [点击查看](https://www.mcbbs.net/thread-1300127-1-1.html)
+[插件文档](https://ricedoc.handyplus.cn/wiki/mcmmoview/)
 
 本插件代码全部原创,基于HandyLib开发
 
