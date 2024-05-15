@@ -1,7 +1,7 @@
 package cn.handyplus.mcmmo.listener.gui;
 
 import cn.handyplus.lib.core.StrUtil;
-import cn.handyplus.lib.expand.adapter.HandySchedulerUtil;
+import cn.handyplus.lib.expand.adapter.PlayerSchedulerUtil;
 import cn.handyplus.lib.inventory.HandyInventory;
 import cn.handyplus.lib.inventory.IHandyClickEvent;
 import cn.handyplus.mcmmo.constants.GuiTypeEnum;
@@ -40,7 +40,7 @@ public class OpenClickEvent implements IHandyClickEvent {
         }
         handyInventory.syncClose();
         command = command.replace("${player}", player.getName());
-        HandySchedulerUtil.performCommand(player, command);
+        PlayerSchedulerUtil.performCommand(player, command);
     }
 
 }

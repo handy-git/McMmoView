@@ -62,6 +62,19 @@ skill:
     index: 22
     isEnchant: false
     custom-model-data: 0
+  CROSSBOWS:
+    name: "&aCrossbow"
+    material: "CROSSBOW"
+    lore:
+      - "Gain experience from: Using crossbow"
+      - "&b--> &aYour level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 38
+    isEnchant: false
+    custom-model-data: 0
   EXCAVATION:
     name: "&aExcavation"
     material: "DIAMOND_SHOVEL"
@@ -162,6 +175,19 @@ skill:
       - ""
       - "&B&lClick to view detailed skill information!"
     index: 33
+    isEnchant: false
+    custom-model-data: 0
+  TRIDENTS:
+    name: "&aTrident"
+    material: "TRIDENT"
+    lore:
+      - "Gain experience from: Using trident"
+      - "&b--> &aYour level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 42
     isEnchant: false
     custom-model-data: 0
   UNARMED:

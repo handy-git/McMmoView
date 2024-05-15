@@ -1,0 +1,262 @@
+# 重載插件提醒
+reloadMsg: "&a插件重載完畢..."
+# 沒權限時候提醒
+noPermission: "&c你沒有權限執行此命令..."
+
+# placeholderAPI提醒
+placeholderAPISucceedMsg: "&a成功加載placeholderApi,啟用自定義變量功能!"
+placeholderAPIFailureMsg: "&4未找到placeholderApi,未啟用自定義變量功能!"
+
+title: "&7McMMO個人信息"
+
+skill:
+  ACROBATICS:
+    name: "&a雜技"
+    material: "GOLDEN_BOOTS"
+    lore:
+      - "獲得經驗途徑: 掉落"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 19
+    isEnchant: false
+    custom-model-data: 0
+  ALCHEMY:
+    name: "&a煉金"
+    material: "GOLD_INGOT"
+    lore:
+      - "獲得經驗途徑: 釀造藥水"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 20
+    isEnchant: false
+    custom-model-data: 0
+  ARCHERY:
+    name: "&a箭術"
+    material: "BOW"
+    lore:
+      - "獲得經驗途徑: 射箭"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 21
+    isEnchant: false
+    custom-model-data: 0
+  AXES:
+    name: "&a斧技"
+    material: "IRON_AXE"
+    lore:
+      - "獲得經驗途徑: 使用斧"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 22
+    isEnchant: false
+    custom-model-data: 0
+  CROSSBOWS:
+    name: "&a弩手"
+    material: "CROSSBOW"
+    lore:
+      - "獲得經驗途徑: 使用弩"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 38
+    isEnchant: false
+    custom-model-data: 0
+  EXCAVATION:
+    name: "&a挖掘"
+    material: "DIAMOND_SHOVEL"
+    lore:
+      - "獲得經驗途徑: 挖礦物石頭"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 23
+    isEnchant: false
+    custom-model-data: 0
+  FISHING:
+    name: "&a釣魚"
+    material: "FISHING_ROD"
+    lore:
+      - "獲得經驗途徑: 釣魚"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 24
+    isEnchant: false
+    custom-model-data: 0
+  HERBALISM:
+    name: "&a草藥學"
+    material: "GRASS"
+    lore:
+      - "獲得經驗途徑: 收獲作物"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 25
+    isEnchant: false
+    custom-model-data: 0
+  REPAIR:
+    name: "&a修理"
+    material: "ANVIL"
+    lore:
+      - "獲得經驗途徑: 修理裝備"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 29
+    isEnchant: false
+    custom-model-data: 0
+  SALVAGE:
+    name: "&a分解"
+    material: "GOLD_BLOCK"
+    lore:
+      - "獲得經驗途徑: 從釣魚/修理"
+      - "&b--> &a您的等級: ${xp}"
+      - "釣魚/修理"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 30
+    isEnchant: false
+    custom-model-data: 0
+  SMELTING:
+    name: "&a冶煉"
+    material: "FURNACE"
+    lore:
+      - "獲得經驗途徑: 從挖礦/修理"
+      - "&b--> &a您的等級: ${xp}"
+      - "挖礦/修理"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 31
+    isEnchant: false
+    custom-model-data: 0
+  SWORDS:
+    name: "&a劍術"
+    material: "DIAMOND_SWORD"
+    lore:
+      - "獲得經驗途徑: 使用劍"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 32
+    isEnchant: false
+    custom-model-data: 0
+  TAMING:
+    name: "&a馴獸"
+    material: "DIAMOND"
+    lore:
+      - "獲得經驗途徑: 馴服動物"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 33
+    isEnchant: false
+    custom-model-data: 0
+  TRIDENTS:
+    name: "&a三叉戟手"
+    material: "TRIDENT"
+    lore:
+      - "獲得經驗途徑: 使用三叉戟"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 42
+    isEnchant: false
+    custom-model-data: 0
+  UNARMED:
+    name: "&a格鬥"
+    material: "BONE_BLOCK"
+    lore:
+      - "獲得經驗途徑: 空手打人"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 39
+    isEnchant: false
+    custom-model-data: 0
+  MINING:
+    name: "&a挖礦"
+    material: "IRON_PICKAXE"
+    lore:
+      - "獲得經驗途徑: 挖掘石頭和礦物"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 40
+    isEnchant: false
+    custom-model-data: 0
+  WOODCUTTING:
+    name: "&a伐木"
+    material: "DIAMOND_AXE"
+    lore:
+      - "獲得經驗途徑: 砍伐樹木"
+      - "&b--> &a您的等級: ${xp}"
+      - "&b--> &a升級所需經驗: ${need}"
+      - "&b--> &a距離下一等級: (${on}/${next})"
+      - ""
+      - "&B&l點擊獲取詳細的技能信息!"
+    index: 41
+    isEnchant: false
+    custom-model-data: 0
+  # 分隔板 index你可以多寫坐標
+  pane:
+    enable: true
+    index: 0,1,2,3,4,5,6,7,8,45,46,47,48,50,51,52,53,9,18,27,36,17,26,35,44
+    material: BLACK_STAINED_GLASS_PANE
+    isEnchant: false
+    name: "       &8[&7分割板&8]"
+    lore:
+      - "&7哎呀,不要隨便戳人家啦"
+    custom-model-data: 0
+  # 返回按鈕
+  back:
+    enable: true
+    index: 49
+    material: barrier
+    isEnchant: false
+    name: "   &8[&a返回&8]"
+    lore:
+      - '&f- &7點擊返回'
+    custom-model-data: 0
+    # 點擊執行的指令 ${player} 表示玩家名稱
+    command: "plm open menu"
+  me:
+    enable: true
+    index: 13
+    material: "NETHER_STAR"
+    isEnchant: false
+    name: "&a總戰鬥力"
+    custom-model-data: 0
+    lore:
+      - "&a當前總戰鬥力: ${all}"

@@ -62,6 +62,19 @@ skill:
     index: 22
     isEnchant: false
     custom-model-data: 0
+  CROSSBOWS:
+    name: "&a弩手"
+    material: "CROSSBOW"
+    lore:
+      - "获得经验途径: 使用弩"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 38
+    isEnchant: false
+    custom-model-data: 0
   EXCAVATION:
     name: "&a挖掘"
     material: "DIAMOND_SHOVEL"
@@ -162,6 +175,19 @@ skill:
       - ""
       - "&B&l点击获取详细的技能信息!"
     index: 33
+    isEnchant: false
+    custom-model-data: 0
+  TRIDENTS:
+    name: "&a三叉戟手"
+    material: "TRIDENT"
+    lore:
+      - "获得经验途径: 使用三叉戟"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 42
     isEnchant: false
     custom-model-data: 0
   UNARMED:
