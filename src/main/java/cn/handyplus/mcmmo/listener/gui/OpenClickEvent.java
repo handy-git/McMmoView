@@ -29,12 +29,8 @@ public class OpenClickEvent implements IHandyClickEvent {
     public void rawSlotClick(HandyInventory handyInventory, InventoryClickEvent event) {
         int rawSlot = event.getRawSlot();
         Player player = handyInventory.getPlayer();
-        Map<Integer, Object> objMap = handyInventory.getObjMap();
-        Object obj = objMap.get(rawSlot);
-        if (obj == null) {
-            return;
-        }
-        String command = (String) obj;
+        Map<Integer, String> strMap = handyInventory.getStrMap();
+        String command = strMap.get(rawSlot);
         if (StrUtil.isEmpty(command)) {
             return;
         }

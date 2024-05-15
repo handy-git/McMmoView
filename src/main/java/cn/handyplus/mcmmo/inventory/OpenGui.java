@@ -71,7 +71,7 @@ public class OpenGui {
      */
     private void setFunctionMenu(HandyInventory handyInventory) {
         Inventory inventory = handyInventory.getInventory();
-        Map<Integer, Object> objMap = handyInventory.getObjMap();
+        Map<Integer, String> strMap = handyInventory.getStrMap();
         Player player = handyInventory.getPlayer();
         // 获取菜单
         ConfigurationSection configurationSection = ConfigUtil.LANG_CONFIG.getConfigurationSection("skill");
@@ -105,10 +105,10 @@ public class OpenGui {
                     continue;
                 }
                 if ("back".equalsIgnoreCase(key)) {
-                    objMap.put(index, memorySection.getString("command"));
+                    strMap.put(index, memorySection.getString("command"));
                     continue;
                 }
-                objMap.put(index, key);
+                strMap.put(index, key);
             }
         }
     }
