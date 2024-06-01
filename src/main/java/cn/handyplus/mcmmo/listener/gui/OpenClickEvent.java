@@ -36,7 +36,7 @@ public class OpenClickEvent implements IHandyClickEvent {
         }
         handyInventory.syncClose();
         command = command.replace("${player}", player.getName());
-        PlayerSchedulerUtil.syncPerformCommand(player, command);
+        PlayerSchedulerUtil.syncPerformCommand(player, command.toLowerCase());
     }
 
 }
