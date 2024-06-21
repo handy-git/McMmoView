@@ -6,6 +6,10 @@
 
 使用教程: [点击查看](https://ricedoc.handyplus.cn/wiki/mcmmoview)
 
+开发版本下载渠道:
+
+[GITHUB ACTIONS](https://github.com/handy-git/PlayerChat/actions)
+
 ## 使用统计
 
 ![使用统计](https://bstats.org/signatures/bukkit/McMmoView.svg)

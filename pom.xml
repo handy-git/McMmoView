@@ -7,16 +7,16 @@
     <groupId>cn.handyplus.mcmmo</groupId>
     <name>mcMmoView</name>
     <artifactId>mcMmoView</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.9</version>
     <description>mcMMO可视化gui</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot-api.vesion>1.20.6-R0.1-SNAPSHOT</spigot-api.vesion>
+        <spigot-api.vesion>1.21-R0.1-SNAPSHOT</spigot-api.vesion>
         <placeholderapi.version>2.10.5</placeholderapi.version>
         <lombok.version>1.18.32</lombok.version>
         <mcMMO.version>2.2.009</mcMMO.version>
-        <HandyLib.version>3.9.7</HandyLib.version>
+        <HandyLib.version>3.9.9</HandyLib.version>
         <placeholderapi.version>2.10.5</placeholderapi.version>
     </properties>
 

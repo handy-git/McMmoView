@@ -1,8 +1,8 @@
 name: McMmoView
 main: cn.handyplus.mcmmo.McMmoView
-version: 1.0.8
+version: 1.0.9
 author: handy
-website: https://ricedoc.handyplus.cn/wiki/MCMMOView/
+website: https://ricedoc.handyplus.cn/wiki/MCMMOView
 api-version: 1.13
 depend: [ mcMMO ]
 softdepend: [ PlaceholderAPI ]
