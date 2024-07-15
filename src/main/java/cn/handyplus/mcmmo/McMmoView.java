@@ -33,7 +33,7 @@ public class McMmoView extends JavaPlugin {
                 .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE));
 
         MessageUtil.sendConsoleMessage(ChatColor.GREEN + "已成功载入服务器!");
-        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "Author:handy WIKI: https://ricedoc.handyplus.cn/wiki/MCMMOView");
+        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "Author:handy WIKI: https://ricedoc.handyplus.cn/wiki/McMmoView");
     }
 
     @Override
