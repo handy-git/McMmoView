@@ -229,6 +229,19 @@ skill:
     index: 41
     isEnchant: false
     custom-model-data: 0
+  MACES:
+    name: "&aMACES"
+    material: "MACE"
+    lore:
+      - "Gain experience from: Using mace"
+      - "&b--> &aYour Level: ${xp}"
+      - "&b--> &aExperience to Next Level: ${need}"
+      - "&b--> &aProgress to Next Level: (${on}/${next})"
+      - ""
+      - "&B&lClick to view detailed skill information!"
+    index: 43
+    isEnchant: false
+    custom-model-data: 0
   # Separator panel, you can add more indices
   pane:
     enable: true

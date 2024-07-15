@@ -229,6 +229,19 @@ skill:
     index: 41
     isEnchant: false
     custom-model-data: 0
+  MACES:
+    name: "&a重锤手"
+    material: "MACE"
+    lore:
+      - "获得经验途径: 使用重锤"
+      - "&b--> &a您的等级: ${xp}"
+      - "&b--> &a升级所需经验: ${need}"
+      - "&b--> &a距离下一等级: (${on}/${next})"
+      - ""
+      - "&B&l点击获取详细的技能信息!"
+    index: 43
+    isEnchant: false
+    custom-model-data: 0
   # 分隔板 index你可以多写坐标
   pane:
     enable: true
