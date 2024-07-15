@@ -4,7 +4,6 @@ import cn.handyplus.lib.annotation.HandyListener;
 import cn.handyplus.lib.constants.BaseConstants;
 import cn.handyplus.lib.util.HandyHttpUtil;
 import cn.handyplus.mcmmo.util.ConfigUtil;
-import cn.handyplus.mcmmo.constants.McMmoViewConstants;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
@@ -29,7 +28,7 @@ public class PlayerJoinEventListener implements Listener {
         if (!ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE_TO_OP_MSG)) {
             return;
         }
-        HandyHttpUtil.checkVersion(event.getPlayer(), McMmoViewConstants.PLUGIN_VERSION_URL);
+        HandyHttpUtil.checkVersion(event.getPlayer());
     }
 
 }

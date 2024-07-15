@@ -2,17 +2,11 @@ package cn.handyplus.mcmmo;
 
 import cn.handyplus.lib.InitApi;
 import cn.handyplus.lib.constants.BaseConstants;
-import cn.handyplus.lib.expand.adapter.HandySchedulerUtil;
-import cn.handyplus.lib.inventory.HandyInventory;
 import cn.handyplus.lib.util.BaseUtil;
 import cn.handyplus.lib.util.MessageUtil;
-import cn.handyplus.mcmmo.constants.McMmoViewConstants;
 import cn.handyplus.mcmmo.util.ConfigUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.InventoryHolder;
-import org.bukkit.inventory.InventoryView;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -36,23 +30,15 @@ public class McMmoView extends JavaPlugin {
                 .initListener("cn.handyplus.mcmmo.listener")
                 .initClickEvent("cn.handyplus.mcmmo.listener.gui")
                 .addMetrics(14150)
-                .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE), McMmoViewConstants.PLUGIN_VERSION_URL);
+                .checkVersion(ConfigUtil.CONFIG.getBoolean(BaseConstants.IS_CHECK_UPDATE));
 
-        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "已成功载入服务器！");
-        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "Author:handy 使用文档: https://ricedoc.handyplus.cn/wiki/MCMMOView");
+        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "已成功载入服务器!");
+        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "Author:handy WIKI: https://ricedoc.handyplus.cn/wiki/MCMMOView");
     }
 
     @Override
     public void onDisable() {
-        for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
-            InventoryView openInventory = onlinePlayer.getOpenInventory();
-            InventoryHolder holder = openInventory.getTopInventory().getHolder();
-            if (holder instanceof HandyInventory) {
-                onlinePlayer.closeInventory();
-            }
-        }
-        HandySchedulerUtil.cancelTask();
-        MessageUtil.sendConsoleMessage(ChatColor.GREEN + "已成功卸载！");
+        InitApi.disable();
     }
 
     /**
