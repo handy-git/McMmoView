@@ -4,7 +4,7 @@
 
 如果本插件帮助到你，请帮忙右上角点个Star就对作者很大的支持了～
 
-使用教程: [点击查看](https://ricedoc.handyplus.cn/wiki/mcmmoview)
+使用教程: [点击查看](https://ricedoc.handyplus.cn/wiki/McMmoView)
 
 开发版本下载渠道:
 
