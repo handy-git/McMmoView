@@ -9,18 +9,18 @@ softdepend: [ PlaceholderAPI ]
 description: mcMMO可视化gui
 folia-supported: true
 commands:
-  mcmmoview:
+  mcMmoView:
     description: mcMMO可视化gui
     aliases: [ mmv ]
 permissions:
-  mcmmoview.*:
+  mcMmoView.*:
     description: mcMMO可视化gui
     children:
-      mcmmoview.reload: true
-      mcmmoview.open: true
-  mcmmoview.reload:
+      mcMmoView.reload: true
+      mcMmoView.open: true
+  mcMmoView.reload:
     description: 重新加载配置
     default: op
-  mcmmoview.open:
+  mcMmoView.open:
     description: 打开GUI
     default: true
