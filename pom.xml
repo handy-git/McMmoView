@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.handyplus.mcmmo</groupId>
-    <name>mcMmoView</name>
-    <artifactId>mcMmoView</artifactId>
+    <name>McMmoView</name>
+    <artifactId>McMmoView</artifactId>
     <version>1.1.0</version>
     <description>mcMMO可视化gui</description>
 
