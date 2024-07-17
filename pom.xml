@@ -16,7 +16,7 @@
         <placeholderapi.version>2.10.5</placeholderapi.version>
         <lombok.version>1.18.32</lombok.version>
         <mcMMO.version>2.2.017</mcMMO.version>
-        <HandyLib.version>3.10.6</HandyLib.version>
+        <HandyLib.version>3.10.7</HandyLib.version>
         <placeholderapi.version>2.10.5</placeholderapi.version>
         <annotations.version>24.1.0</annotations.version>
     </properties>
