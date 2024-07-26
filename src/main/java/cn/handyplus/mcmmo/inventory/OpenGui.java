@@ -1,6 +1,7 @@
 package cn.handyplus.mcmmo.inventory;
 
 import cn.handyplus.lib.constants.BaseConstants;
+import cn.handyplus.lib.constants.VersionCheckEnum;
 import cn.handyplus.lib.core.StrUtil;
 import cn.handyplus.lib.inventory.HandyInventory;
 import cn.handyplus.lib.inventory.HandyInventoryUtil;
@@ -89,7 +90,10 @@ public class OpenGui {
             String indexStrList = memorySection.getString("index");
             List<Integer> indexList = StrUtil.strToIntList(indexStrList);
             String material = memorySection.getString("material");
-
+            // 1.21以下不加载重锤
+            if (BaseConstants.VERSION_ID < VersionCheckEnum.V_1_21.getVersionId() && "MACE".equalsIgnoreCase(material)) {
+                continue;
+            }
             String name = memorySection.getString("name");
             List<String> loreList = memorySection.getStringList("lore");
             int customModelDataId = memorySection.getInt("custom-model-data");
